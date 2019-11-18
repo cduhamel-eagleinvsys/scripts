@@ -1,0 +1,212 @@
+# SQLPlus
+alias sqlplus='rlwrap sqlplus'
+
+# What is this IP address?  Try:
+alias ipname='nslookup '
+alias iplookup='nslookup '
+
+# Git development path
+alias ghome='cd $GIT_HOME'
+alias ihome='cd $GIT_HOME'
+
+# Diff commands
+alias tfdiff='tf diff /format:unified '
+alias tfdiffall='tf diff /format:unified /recursive .'
+
+# Patch commands
+alias patchunixtest='patch -p0 --dry-run < '
+alias patchunix='patch -p0 < '
+alias patchwintest='patch -p0 --binary --dry-run < '
+alias patchwin='patch -p0 --binary < '
+
+# Commonly used commands
+alias npl='notepad++'
+alias chome='cd /cygdrive/c'
+alias cdev='cd /cygdrive/c/dev'
+alias cdocs='cd /cygdrive/c/corey'
+alias patches='cd /cygdrive/c/dev/Patches'
+alias edm='cd /cygdrive/c/dev/Int/EDM/oracle/upgrade'
+
+# TFS commands
+alias tfanno='tfpt annotate '
+
+# Script commands
+alias split_set='/cygdrive/c/corey/Scripts/split_set.pl < '
+
+# Windows development path
+export STAR_SERVICING=/cygdrive/c/dev/Servicing
+export STAR_INTEGRATION=/cygdrive/c/dev/Int
+export STAR_2_INTEGRATION=/cygdrive/c/dev/SecondaryInt
+export STAR_SQL_INT_INTEGRATION=/cygdrive/c/dev/SQLInt
+export STAR_WW_INTEGRATION=/cygdrive/c/dev/MF_WW_Int
+export STAR_SQL_FEE_INTEGRATION=/cygdrive/c/dev/SQLFee
+export STAR_CODE_REVIEW_INTEGRATION=/cygdrive/c/dev/CodeReview
+
+# Int
+alias int='cd $STAR_INTEGRATION/star_engine'
+alias ieng='cd $STAR_INTEGRATION/star_engine'
+alias ibind='cd $STAR_INTEGRATION/star_engine/metadata/bind/star'
+alias ievt='cd $STAR_INTEGRATION/star_engine/metadata/events/star'
+alias isql='cd $STAR_INTEGRATION/star_engine/sql/estar'
+alias isqlss='cd $STAR_INTEGRATION/star_engine/sql/starss/packages'
+alias cmcf='cd $STAR_INTEGRATION/star_engine/commonconf'
+alias irules='cd $STAR_INTEGRATION/star_engine/metadata/rules/star'
+alias ceu=$STAR_INTEGRATION/star_engine/util/dev_utils/compile_estar_users.cmd
+export INT_ENGINE_LOGS=/cygdrive/c/engines/logs/starengine/Int/logs
+alias tb='tail -f $INT_ENGINE_LOGS/boot.log'
+alias tb100='tail -100 $INT_ENGINE_LOGS/boot.log'
+alias te='tail -f $INT_ENGINE_LOGS/estar.log'
+alias te100='tail -100 $INT_ENGINE_LOGS/estar.log'
+alias tg='tail -f $INT_ENGINE_LOGS/gERRORS.log'
+alias tg100='tail -100 $INT_ENGINE_LOGS/gERRORS.log'
+
+# SecondaryInt
+alias int2='cd $STAR_2_INTEGRATION/star_engine'
+alias i2eng='cd $STAR_2_INTEGRATION/star_engine'
+alias i2bind='cd $STAR_2_INTEGRATION/star_engine/metadata/bind/star'
+alias i2evt='cd $STAR_2_INTEGRATION/star_engine/metadata/events/star'
+alias i2sql='cd $STAR_2_INTEGRATION/star_engine/sql/estar'
+alias i2sqlss='cd $STAR_2_INTEGRATION/star_engine/sql/starss/packages'
+alias ceu2=$STAR_2_INTEGRATION/star_engine/util/dev_utils/compile_estar_users.cmd
+export INT2_ENGINE_LOGS=/cygdrive/c/engines/logs/starengine/SecondaryInt/logs
+alias tb2='tail -f $INT2_ENGINE_LOGS/boot.log'
+alias tb2100='tail -100 $INT2_ENGINE_LOGS/boot.log'
+alias te2='tail -f $INT2_ENGINE_LOGS/estar.log'
+alias te2100='tail -100 $INT2_ENGINE_LOGS/estar.log'
+alias tg2='tail -f $INT2_ENGINE_LOGS/gERRORS.log'
+alias tg2100='tail -100 $INT2_ENGINE_LOGS/gERRORS.log'
+
+# SQLInt
+alias int3='cd $STAR_SQL_INT_INTEGRATION/star_engine'
+alias i3eng='cd $STAR_SQL_INT_INTEGRATION/star_engine'
+alias i3bind='cd $STAR_SQL_INT_INTEGRATION/star_engine/metadata/bind/star'
+alias i3evt='cd $STAR_SQL_INT_INTEGRATION/star_engine/metadata/events/star'
+alias i3sql='cd $STAR_SQL_INT_INTEGRATION/star_engine/sql/estar'
+alias i3sqlss='cd $STAR_SQL_INT_INTEGRATION/star_engine/sql/starss/packages'
+alias ceu3=$STAR_SQL_INT_INTEGRATION/star_engine/util/dev_utils/compile_estar_users.cmd
+export INT_SQL_INT_FEE_LOGS=/cygdrive/c/engines/logs/starengine/SQLInt/logs
+alias tb3='tail -f $INT_SQL_INT_FEE_LOGS/boot.log'
+alias tb3100='tail -100 $INT_SQL_INT_FEE_LOGS/boot.log'
+alias te3='tail -f $INT_SQL_INT_FEE_LOGS/estar.log'
+alias te3100='tail -100 $INT_SQL_INT_FEE_LOGS/estar.log'
+alias tg3='tail -f $INT_SQL_INT_FEE_LOGS/gERRORS.log'
+alias tg3100='tail -100 $INT_SQL_INT_FEE_LOGS/gERRORS.log'
+
+# MF_WW_Int
+alias intww='cd $STAR_WW_INTEGRATION/star_engine'
+alias wweng='cd $STAR_WW_INTEGRATION/star_engine'
+alias wwbind='cd $STAR_WW_INTEGRATION/star_engine/metadata/bind/star'
+alias wwevt='cd $STAR_WW_INTEGRATION/star_engine/metadata/events/star'
+alias wwsql='cd $STAR_WW_INTEGRATION/star_engine/sql/estar'
+alias ceuww=$STAR_WW_INTEGRATION/star_engine/util/dev_utils/compile_estar_users.cmd
+alias wwsqlss='cd $STAR_WW_INTEGRATION/star_engine/sql/starss/packages'
+export INT_WW_ENGINE_LOGS=/cygdrive/c/engines/logs/starengine/MF_WW_Int/logs
+alias tbww='tail -f $INT_WW_ENGINE_LOGS/boot.log'
+alias tbww100='tail -100 $INT_WW_ENGINE_LOGS/boot.log'
+alias teww='tail -f $INT_WW_ENGINE_LOGS/estar.log'
+alias teww100='tail -100 $INT_WW_ENGINE_LOGS/estar.log'
+alias tgww='tail -f $INT_WW_ENGINE_LOGS/gERRORS.log'
+alias tgww100='tail -100 $INT_WW_ENGINE_LOGS/gERRORS.log'
+
+# SQLFee
+alias intfee='cd $STAR_SQL_FEE_INTEGRATION/star_engine'
+alias feeeng='cd $STAR_SQL_FEE_INTEGRATION/star_engine'
+alias feebind='cd $STAR_SQL_FEE_INTEGRATION/star_engine/metadata/bind/star'
+alias feeevt='cd $STAR_SQL_FEE_INTEGRATION/star_engine/metadata/events/star'
+alias feesql='cd $STAR_SQL_FEE_INTEGRATION/star_engine/sql/estar'
+alias ceufee=$STAR_SQL_FEE_INTEGRATION/star_engine/util/dev_utils/compile_estar_users.cmd
+alias feesqlss='cd $STAR_SQL_FEE_INTEGRATION/star_engine/sql/starss/packages'
+export INT_SQL_FEE_LOGS=/cygdrive/c/engines/logs/starengine/SQLFee/logs
+alias tbfee='tail -f $INT_SQL_FEE_LOGS/boot.log'
+alias tbfee100='tail -100 $INT_SQL_FEE_LOGS/boot.log'
+alias tefee='tail -f $INT_SQL_FEE_LOGS/estar.log'
+alias tefee100='tail -100 $INT_SQL_FEE_LOGS/estar.log'
+alias tgfee='tail -f $INT_SQL_FEE_LOGS/gERRORS.log'
+alias tgfee100='tail -100 $INT_SQL_FEE_LOGS/gERRORS.log'
+
+# CodeReview
+alias intcr='cd $STAR_CODE_REVIEW_INTEGRATION/star_engine'
+alias creng='cd $STAR_CODE_REVIEW_INTEGRATION/star_engine'
+alias crbind='cd $STAR_CODE_REVIEW_INTEGRATION/star_engine/metadata/bind/star'
+alias crevt='cd $STAR_CODE_REVIEW_INTEGRATION/star_engine/metadata/events/star'
+alias crsql='cd $STAR_CODE_REVIEW_INTEGRATION/star_engine/sql/estar'
+export STAR_CODE_REVIEW_LOGS=/cygdrive/c/engines/logs/starengine/CodeReview/logs
+alias tbcr='tail -f $STAR_CODE_REVIEW_LOGS/boot.log'
+alias tbcr100='tail -100 $STAR_CODE_REVIEW_LOGS/boot.log'
+alias tecr='tail -f $STAR_CODE_REVIEW_LOGS/estar.log'
+alias tecr100='tail -100 $STAR_CODE_REVIEW_LOGS/estar.log'
+alias tgcr='tail -f $STAR_CODE_REVIEW_LOGS/gERRORS.log'
+alias tgcr100='tail -100 $STAR_CODE_REVIEW_LOGS/gERRORS.log'
+
+# MFSandbox
+export MFSANDBOX_ENGINE_LOGS=/cygdrive/c/engines/logs/starengine/MFSandbox/logs
+alias tbmf='tail -f $MFSANDBOX_ENGINE_LOGS/boot.log'
+alias tbmf100='tail -100 $MFSANDBOX_ENGINE_LOGS/boot.log'
+alias temf='tail -f $MFSANDBOX_ENGINE_LOGS/estar.log'
+alias temf100='tail -100 $MFSANDBOX_ENGINE_LOGS/estar.log'
+alias tgmf='tail -f $MFSANDBOX_ENGINE_LOGS/gERRORS.log'
+alias tgmf100='tail -100 $MFSANDBOX_ENGINE_LOGS/gERRORS.log'
+
+# 2017R2.x Maintenance
+export STAR_ENG_2017R2=$STAR_SERVICING/2017R2/BR17R2-MT/src/star_engine
+alias 17r2='cd $STAR_ENG_2017R2'
+alias 17r2bind='cd $STAR_ENG_2017R2/metadata/bind/star'
+alias 17r2evt='cd $STAR_ENG_2017R2/metadata/events/star'
+alias 17r2sql='cd $STAR_ENG_2017R2/sql/estar'
+alias 17r2sqlss='cd $STAR_ENG_2017R2/sql/starss/packages'
+
+# 2015R2.x Maintenance
+export STAR_ENG_2015R21=$STAR_SERVICING/2015R2/BR-15R2-MT/src/star_engine
+alias 15r2eng='cd $STAR_ENG_2015R21'
+alias 15r2bind='cd $STAR_ENG_2015R21/metadata/bind/star'
+alias 15r2evt='cd $STAR_ENG_2015R21/metadata/events/star'
+alias 15r2sql='cd $STAR_ENG_2015R21/sql/estar'
+alias 15r2sqlss='cd $STAR_ENG_2015R21/sql/starss/packages'
+
+# 2015R1
+export STAR_ENG_2015R1=$STAR_SERVICING/2015R1/BR-15R1/star_engine
+alias 15r1eng='cd $STAR_ENG_2015R1'
+alias 15r1bind='cd $STAR_ENG_2015R1/metadata/bind/star'
+alias 15r1evt='cd $STAR_ENG_2015R1/metadata/events/star'
+alias 15r1sql='cd $STAR_ENG_2015R1/sql/estar'
+alias 15r12sqlss='cd $STAR_ENG_2015R1/sql/starss/packages'
+
+# 13.1.2.13 BKxx USFS
+export STAR_ENG_1312BK=$STAR_SERVICING/v13.1/BR-v131213-BK/src/star_engine
+alias bkeng='cd $STAR_ENG_1312BK'
+alias bkbind='cd $STAR_ENG_1312BK/metadata/bind/star'
+alias bkevt='cd $STAR_ENG_1312BK/metadata/events/star'
+alias bksql='cd $STAR_ENG_1312BK/sql/estar'
+alias bksqlss='cd $STAR_ENG_1312BK/sql/starss/packages'
+
+# 13.1.2.13 BKxx TMP USFS
+export STAR_ENG_BKTMP=$STAR_SERVICING/v13.1/BR-v131213BK29-CST/src/star_engine
+alias bktmpeng='cd $STAR_ENG_BKTMP'
+alias bktmpbind='cd $STAR_ENG_BKTMP/metadata/bind/star'
+alias bktmpevt='cd $STAR_ENG_BKTMP/metadata/events/star'
+alias bktmpsql='cd $STAR_ENG_BKTMP/sql/estar'
+alias bktmpsqlss='cd $STAR_ENG_BKTMP/sql/starss/packages'
+
+# 13.1.2.x Cap Group?
+export STAR_ENG_1312=$STAR_SERVICING/v13.1/BR-v1312-JF/src/star_engine
+alias 1312eng='cd $STAR_ENG_1312'
+alias 1312bind='cd $STAR_ENG_1312/metadata/bind/star'
+alias 1312evt='cd $STAR_ENG_1312/metadata/events/star'
+alias 1312sql='cd $STAR_ENG_1312/sql/estar'
+alias 1312sqlss='cd $STAR_ENG_1312/sql/starss/packages'
+
+# Capital Group, 12.1.4.3
+export STAR_ENG_CG=$STAR_SERVICING/v121/BR-v12143-CG/STAR_ENGINE
+alias cgeng='cd $STAR_ENG_CG'
+alias cgbind='cd $STAR_ENG_CG/metadata/bind/star'
+alias cgevt='cd $STAR_ENG_CG/metadata/events/star'
+alias cgsql='cd $STAR_ENG_CG/sql/estar'
+alias cgsqlss='cd $STAR_ENG_CG/sql/starss/packages'
+
+# US Bancorp, 12.1.5
+export STAR_ENG_1215=$STAR_SERVICING/v121/BR-v1215-JF/STAR_ENGINE
+alias 1215eng='cd $STAR_ENG_1215'
+alias 1215bind='cd $STAR_ENG_1215/metadata/bind/star'
+alias 1215evt='cd $STAR_ENG_1215/metadata/events/star'
+alias 1215sql='cd $STAR_ENG_1215/sql/estar'
+alias 1215sqlss='cd $STAR_ENG_1215/sql/starss/packages'
